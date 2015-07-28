@@ -1,0 +1,51 @@
+<html>
+	<style>
+		div#countertimer, div#self-service-timer {
+			width: 50%;
+			height: 500px;
+			float: left;
+		}
+
+		body {
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 60px;
+		}
+
+		h1 {
+			font-size: 120px;
+			margin-bottom: 10px;
+			margin-top: 20px;
+		}
+
+		h3 {
+			font-size: 40px;
+			margin: 0;
+		}
+
+	</style>
+<head></head>
+
+<body>
+<div id="countertimer">
+	<h2>Counter</h2>
+	<h1>{{ counter.time }}</h1>
+	<h3>mins</h3>
+</div>
+
+<div id="self-service-timer">
+	<h2>Self service:</h2>
+	<h1>{{ selfservice.time }}</h1>
+	<h3>mins</h3>
+</div>
+
+<div id="digital">
+	<h2>Barclays mobile banking app: no wait</h2>
+</div>
+
+
+</body>
+
+</html>
