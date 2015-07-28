@@ -1,48 +1,121 @@
 <html>
 	<style>
-		div#countertimer, div#self-service-timer {
-			width: 50%;
-			height: 500px;
+
+		@font-face {
+	    font-family: "Expert";
+	    src: url("static/fonts/ExpertSans-Regular.ttf");
+		}
+
+		@font-face {
+	    font-family: "Expert-Light";
+	    src: url("static/fonts/ExpertSans-Light.ttf");
+		}
+
+		@font-face {
+	    font-family: "Expert-Extra-Light";
+	    src: url("static/fonts/ExpertSans-ExtraLight.ttf");
+		}
+
+		:root {
+    	--digital-blue:#00395D;
+    	--digital-light-blue:#0074A6;
+    	--cyan:#00AEEF;
+		}
+
+		div.timer {
+			width: 33%;
+			height: 400px;
 			float: left;
+		}
+
+		div#footer {
+			border-top: 1px solid #8c8c8c;
+			margin: 0px 100px;
+		}
+
+		div#container {
+			overflow: auto;
+			width: 100%
 		}
 
 		body {
 			text-align: center;
 		}
 
-		h2 {
-			font-size: 60px;
+		h1 {
+			font-size: 150px;
+			margin-bottom: 0px;
+			margin-top: 20px;
+			font-family: "Expert-Extra-Light";
+			color: #00395D;
 		}
 
-		h1 {
-			font-size: 120px;
+		h2 {
+			font-size: 50px;
+			font-family: "Expert-Extra-Light";
 			margin-bottom: 10px;
-			margin-top: 20px;
+			margin-top: 0px;
+		}
+
+		h2#page-title {
+			margin-left: 100px;
+			text-align: left;
+			margin-top: 60px;
+			margin-bottom: 80px;
+			color: #0074A6;
 		}
 
 		h3 {
 			font-size: 40px;
-			margin: 0;
+			margin-top: 0px 0px;
+		}
+
+		h4 {
+			font-size: 30px;
+			color: #0074A6;
+			font-family: "Expert-Light";
+			text-align: left;
+			margin-bottom: 0px;
+		}
+
+		p {
+			font-size: 26px;
+			font-family: "Expert-Light";
+			text-align: left;
+			margin-top: 5px;
 		}
 
 	</style>
 <head></head>
 
 <body>
-<div id="countertimer">
-	<h2>Counter</h2>
-	<h1>{{ counter.time }}</h1>
-	<h3>mins</h3>
+
+<h2 id="page-title">Average waiting time</h2>
+
+<div id="container">
+	<div class="timer">
+
+		<h2>Counter</h2>
+		<h1>{{ counter.time }}</h1>
+		<h2>minutes</h2>
+	</div>
+
+	<div class="timer">
+		<h2>Self service</h2>
+		<h1>{{ selfservice.time }}</h1>
+		<h2>minutes</h2>
+	</div>
+
+	<div class="timer">
+		<h2>Mobile app</h2>
+		<h1>0</h1>
+		<h2>minutes</h2>
+	</div>
 </div>
 
-<div id="self-service-timer">
-	<h2>Self service</h2>
-	<h1>{{ selfservice.time }}</h1>
-	<h3>mins</h3>
-</div>
-
-<div id="digital">
-	<h2>Barclays mobile banking app: no wait</h2>
+<div id="footer">
+	<h4>Start mobile banking today</h4>
+	<p>Ask a member of staff to register you in just 3 mins</p>
 </div>
 
 
