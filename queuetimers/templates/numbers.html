@@ -53,15 +53,8 @@
 		h2 {
 			font-size: 50px;
 			font-family: "Expert-Extra-Light";
-			margin-bottom: 30px;
+			margin-bottom: 10px;
 			margin-top: 0px;
-			text-align: left;
-		}
-
-		a {
-			color: black;
-			text-decoration: none;
-			margin-left: 100px;
 		}
 
 		h2#page-title {
@@ -72,16 +65,57 @@
 			color: #0074A6;
 		}
 
+		h3 {
+			font-size: 40px;
+			margin-top: 0px 0px;
+		}
+
+		h4 {
+			font-size: 30px;
+			color: #0074A6;
+			font-family: "Expert-Light";
+			text-align: left;
+			margin-bottom: 0px;
+		}
+
+		p {
+			font-size: 26px;
+			font-family: "Expert-Light";
+			text-align: left;
+			margin-top: 5px;
+		}
+
 	</style>
 <head></head>
 
 <body>
 
-<h2 id="page-title">Waiting time visualisations</h2>
+<h2 id="page-title">Average waiting time</h2>
 
 <div id="container">
-		<h2><a href="/numbers">Numbers &rsaquo;</a></h2>
-		<h2><a href="/shapes">Shapes &rsaquo;</a></h2>
+	<div class="timer">
+
+		<h2>Counter</h2>
+		<h1>{{ counter.time }}</h1>
+		<h2>minutes</h2>
+	</div>
+
+	<div class="timer">
+		<h2>Self service</h2>
+		<h1>{{ selfservice.time }}</h1>
+		<h2>minutes</h2>
+	</div>
+
+	<div class="timer">
+		<h2>Mobile app</h2>
+		<h1>0</h1>
+		<h2>minutes</h2>
+	</div>
+</div>
+
+<div id="footer">
+	<h4>Start mobile banking today</h4>
+	<p>Ask a member of staff to register you in just 3 mins</p>
 </div>
 
 

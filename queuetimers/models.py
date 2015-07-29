@@ -7,3 +7,13 @@ class Timer(models.Model):
 
 	def __str__(self):
 		return self.queue
+
+	@property
+	def shape_size(self):
+		try:
+			if int(self.time) in range(1,11):
+				return int(self.time)
+			else:
+				return 10
+		except:
+			return 10

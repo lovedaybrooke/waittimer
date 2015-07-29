@@ -19,5 +19,7 @@ from queuetimers import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', views.home, name='home'),
-]
+    url(r'^numbers$', views.numbers, name='numbers'),
+    url(r'^shapes$', views.shapes, name='shapes'),
+	url(r'^$', views.home, name='home'),
+    ]

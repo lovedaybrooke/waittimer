@@ -1,0 +1,120 @@
+<html>
+	<style>
+
+		@font-face {
+	    font-family: "Expert";
+	    src: url("static/fonts/ExpertSans-Regular.ttf");
+		}
+
+		@font-face {
+	    font-family: "Expert-Light";
+	    src: url("static/fonts/ExpertSans-Light.ttf");
+		}
+
+		@font-face {
+	    font-family: "Expert-Extra-Light";
+	    src: url("static/fonts/ExpertSans-ExtraLight.ttf");
+		}
+
+		:root {
+    	--digital-blue:#00395D;
+    	--digital-light-blue:#0074A6;
+    	--cyan:#00AEEF;
+		}
+
+		div.timer {
+			width: 100%;
+			height: 140px;
+			align: 0px auto;
+			text-align: left;
+			margin: 0px 70px;
+		}
+
+		div#footer {
+			border-top: 1px solid #8c8c8c;
+			margin: 0px 100px;
+		}
+
+		body {
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 150px;
+			margin-bottom: 0px;
+			margin-top: 20px;
+			font-family: "Expert-Extra-Light";
+			color: #00395D;
+		}
+
+		h2 {
+			font-size: 50px;
+			font-family: "Expert-Extra-Light";
+			margin-top: 0px;
+			display: inline-block;
+			width: 300px;
+			text-align: right;
+		}
+
+		h2#page-title {
+			margin-left: 0px;
+			text-align: left;
+			margin-top: 60px;
+			margin-bottom: 80px;
+			color: #0074A6;
+			width: 1200px;
+		}
+
+		h4 {
+			font-size: 30px;
+			color: #0074A6;
+			font-family: "Expert-Light";
+			text-align: left;
+			margin-bottom: 0px;
+		}
+
+		p {
+			font-size: 26px;
+			font-family: "Expert-Light";
+			text-align: left;
+			margin-top: 5px;
+		}
+
+		img {
+			position: relative;
+			left: 100px;
+		    vertical-align: top;
+		}
+
+	</style>
+<head></head>
+
+<body>
+
+<h2 id="page-title">Average waiting time</h2>
+
+	<div class="timer">
+
+		<h2>Counter</h2>
+		<img src="/static/images/{{ counter.shape_size }}.png" />
+	</div>
+
+	<div class="timer">
+		<h2>Self service</h2>
+		<img src="/static/images/{{ selfservice.shape_size }}.png" />
+	</div>
+
+	<div class="timer">
+		<h2>Mobile app</h2>
+		<img src="/static/images/0.png" />
+	</div>
+
+<div id="footer">
+	<h4>Start mobile banking today</h4>
+	<p>Ask a member of staff to register you in just 3 mins</p>
+</div>
+
+
+</body>
+
+</html>
