@@ -1,0 +1,23 @@
+div.timer {
+	width: 33%;
+	height: 400px;
+	float: left;
+}
+
+div#container {
+	overflow: auto;
+	width: 100%
+}
+
+h2.dark {
+	color: #00395D;
+}
+
+h2.light {
+	color: #00AEEF;
+}
+
+img {
+	margin-top: 40px;
+
+}

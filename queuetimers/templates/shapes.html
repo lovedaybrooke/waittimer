@@ -1,136 +1,33 @@
 <html>
-	<style>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/css/shared.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/shapes.css">
+	</head>
 
-		@font-face {
-	    font-family: "Expert";
-	    src: url("static/fonts/ExpertSans-Regular.ttf");
-		}
-
-		@font-face {
-	    font-family: "Expert-Light";
-	    src: url("static/fonts/ExpertSans-Light.ttf");
-		}
-
-		@font-face {
-	    font-family: "Expert-Extra-Light";
-	    src: url("static/fonts/ExpertSans-ExtraLight.ttf");
-		}
-
-		:root {
-    	--digital-blue:#00395D;
-    	--digital-light-blue:#0074A6;
-    	--cyan:	;
-		}
-
-		div.timer {
-			width: 100%;
-			height: 130px;
-			align: 0px auto;
-			text-align: left;
-			margin: 0px 100px;
-		}
-
-		div#footer {
-			border-top: 1px solid #8c8c8c;
-			margin: 0px 100px;
-		}
-
-		body {
-			text-align: center;
-		}
-
-		h1 {
-			font-size: 150px;
-			margin-bottom: 0px;
-			margin-top: 20px;
-			font-family: "Expert-Extra-Light";
-			color: #00AEEF;
-		}
-
-		h2, h3 {
-			font-size: 50px;
-			font-family: "Expert-Extra-Light";
-			
-			display: inline-block;
-			
-			text-align: left;
-		}
-
-		h2 {
-			margin-left: 0px;
-			text-align: left;
-			margin-top: 60px;
-			margin-bottom: 80px;
-			color: #00AEEF;
-			width: 1200px;
-		}
-
-		h3 {
-			font-size: 36px;
-			width: 200px;
-			margin-top: 10px;
-		}
-
-		h3#blue {
-			position: relative;
-			left: 40px;
-			width: 800px;
-			color: #00AEEF;
-		}
-
-		h4 {
-			font-size: 30px;
-			color: #00AEEF;
-			font-family: "Expert-Light";
-			text-align: left;
-			margin-bottom: 0px;
-		}
-
-		p {
-			font-size: 26px;
-			font-family: "Expert-Light";
-			text-align: left;
-			margin-top: 5px;
-		}
-
-		img {
-			position: relative;
-			left: 40px;
-		    vertical-align: top;
-		}
-
-		div#footer img { 
-			float:right;
-			padding-right: 40px;
-			padding-top: 10px;
-		}
-
-	</style>
-<head></head>
 
 <body>
 
-<h2 id="page-title">Average waiting times</h2>
+<h1>Average waiting times</h1>
 
 	<div class="timer">
 
-		<h3>At a counter</h2>
+		<h2>At a counter</h2>
 		<img src="/static/images/bars/{{ counter.shape_size }}.png" />
 	</div>
 
 	<div class="timer">
-		<h3>Self service</h2>
+		<h2>Self service</h2>
 		<img src="/static/images/bars/{{ selfservice.shape_size }}.png" />
 	</div>
 
 	<div class="timer">
-		<h3>Your mobile</h2>
-		<h3 id="blue">No waiting time – to get started, ask our staff</h3>
+		<h2>Your mobile</h2>
+		<h2 id="blue">No waiting time – to get started, ask our staff</h2>
 	</div>
 
 <div id="footer">
 	<img src="/static/images/download-icons.png" />
-	<h4>Start mobile banking today</h4>
+	<h3>Start mobile banking today</h3>
 	<p>Ask a member of staff to register you in just 3 mins</p>
 </div>
 
