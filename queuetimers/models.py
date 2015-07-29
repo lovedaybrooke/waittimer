@@ -14,6 +14,6 @@ class Timer(models.Model):
 			if int(self.time) in range(1,11):
 				return int(self.time)
 			else:
-				return 10
+				return 11
 		except:
-			return 10
+			return 11

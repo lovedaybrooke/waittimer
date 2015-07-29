@@ -1,0 +1,57 @@
+@font-face {
+	font-family: "Expert";
+	src: url("static/fonts/ExpertSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Expert-Light";
+	src: url("static/fonts/ExpertSans-Light.ttf");
+}
+
+@font-face {
+	font-family: "Expert-Extra-Light";
+	src: url("static/fonts/ExpertSans-ExtraLight.ttf");
+}
+
+
+body {
+	text-align: center;
+}
+
+h2 {
+	margin-left: 0px;
+	text-align: left;
+	margin-top: 60px;
+	margin-bottom: 80px;
+	color: #00AEEF;
+	width: 1200px;
+}
+
+
+h4 {
+	font-size: 30px;
+	color: #0074A6;
+	font-family: "Expert-Light";
+	text-align: left;
+	margin-bottom: 0px;
+}
+
+p {
+	font-size: 26px;
+	font-family: "Expert-Light";
+	text-align: left;
+	margin-top: 5px;
+}
+
+
+div#footer {
+	border-top: 1px solid #8c8c8c;
+	margin: 0px 100px;
+}
+
+div#footer img { 
+	float:right;
+	padding-right: 40px;
+	padding-top: 10px;
+	margin: 0px;
+}

@@ -26,6 +26,8 @@
 			width: 33%;
 			height: 400px;
 			float: left;
+			background-image: url("/static/images/dark-circle.png");
+	    	background-repeat: no-repeat;
 		}
 
 		div#footer {
@@ -42,19 +44,19 @@
 			text-align: center;
 		}
 
-		h1 {
-			font-size: 150px;
-			margin-bottom: 0px;
-			margin-top: 20px;
-			font-family: "Expert-Extra-Light";
-			color: #00395D;
-		}
-
 		h2 {
 			font-size: 50px;
 			font-family: "Expert-Extra-Light";
-			margin-bottom: 10px;
+			margin-bottom: 0px;
 			margin-top: 0px;
+		}
+
+		h2.dark {
+			color: #00395D;
+		}
+
+		h2.light {
+			color: #00AEEF;
 		}
 
 		h2#page-title {
@@ -62,12 +64,12 @@
 			text-align: left;
 			margin-top: 60px;
 			margin-bottom: 80px;
-			color: #0074A6;
+			color: #00AEEF;
 		}
 
-		h3 {
-			font-size: 40px;
-			margin-top: 0px 0px;
+		img {
+			margin-top: 40px;
+
 		}
 
 		h4 {
@@ -85,35 +87,39 @@
 			margin-top: 5px;
 		}
 
+		div#footer img { 
+			float:right;
+			padding-right: 40px;
+			padding-top: 10px;
+			margin: 0px;
+		}
+
 	</style>
 <head></head>
 
 <body>
 
-<h2 id="page-title">Average waiting time</h2>
+<h2 id="page-title">Average waiting times</h2>
 
 <div id="container">
 	<div class="timer">
-
-		<h2>Counter</h2>
-		<h1>{{ counter.time }}</h1>
-		<h2>minutes</h2>
+		<h2 class="dark">At a counter</h2>
+		<img src="/static/images/circles/{{ counter.shape_size }}.png" />
 	</div>
 
 	<div class="timer">
-		<h2>Self service</h2>
-		<h1>{{ selfservice.time }}</h1>
-		<h2>minutes</h2>
+		<h2 class="dark">Self service</h2>
+		<img src="/static/images/circles/{{ selfservice.shape_size }}.png" />
 	</div>
 
 	<div class="timer">
-		<h2>Mobile app</h2>
-		<h1>0</h1>
-		<h2>minutes</h2>
+		<h2 class="light">Your mobile</h2>
+		<img src="/static/images/circles/0.png" />
 	</div>
 </div>
 
 <div id="footer">
+	<img src="/static/images/download-icons.png" />
 	<h4>Start mobile banking today</h4>
 	<p>Ask a member of staff to register you in just 3 mins</p>
 </div>
