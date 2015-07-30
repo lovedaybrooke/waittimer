@@ -10,13 +10,16 @@
 
 
 div#footer {
-	border-top: 1px solid #8c8c8c;
-	margin: 0px 100px;
+	background-color: #00AEEF;
+	margin: 0px;
+	padding: 20px 100px;
+	height: 180px;
 }
 
 
 body {
 	text-align: center;
+	margin: 0px;
 }
 
 h1 {
@@ -47,6 +50,7 @@ h3 {
 	font-family: "Expert-Light";
 	text-align: left;
 	margin-bottom: 0px;
+	color: white;
 }
 
 p {
@@ -54,6 +58,7 @@ p {
 	font-family: "Expert-Light";
 	text-align: left;
 	margin-top: 5px;
+	color: white;
 }
 
 a {
@@ -63,7 +68,7 @@ a {
 }
 
 div#footer img { 
-	float:right;
+	float: left;
 	padding-right: 40px;
 	padding-top: 10px;
 	margin: 0px;

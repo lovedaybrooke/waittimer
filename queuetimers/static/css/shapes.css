@@ -32,7 +32,7 @@ h2#blue {
 	color: #00AEEF;
 }
 
-img {
+img.bar {
 	position: relative;
 	left: 40px;
     vertical-align: top;
