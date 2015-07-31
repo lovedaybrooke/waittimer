@@ -1,0 +1,42 @@
+div.timer {
+	width: 33%;
+	height: 400px;
+	float: left;
+}
+
+div#container {
+	overflow: auto;
+	width: 100%
+}
+
+body {
+	text-align: center;
+}
+
+h2 {
+	font-size: 50px;
+	font-family: "Expert-Extra-Light";
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+h2.dark {
+	color: #00395D;
+}
+
+h2.light {
+	color: #00AEEF;
+}
+
+h2#page-title {
+	margin-left: 100px;
+	text-align: left;
+	margin-top: 60px;
+	margin-bottom: 80px;
+	color: #00AEEF;
+}
+
+img {
+	margin-top: 40px;
+
+}
